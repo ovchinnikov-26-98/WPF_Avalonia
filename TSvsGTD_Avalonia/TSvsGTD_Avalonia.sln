@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSvsGTD_Avalonia", "TSvsGTD_Avalonia\TSvsGTD_Avalonia.csproj", "{B3F62A52-6C41-44A6-9398-291EF3DB70E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3F62A52-6C41-44A6-9398-291EF3DB70E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F62A52-6C41-44A6-9398-291EF3DB70E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F62A52-6C41-44A6-9398-291EF3DB70E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F62A52-6C41-44A6-9398-291EF3DB70E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E120589-F8C3-4908-B0A6-E369BD0C1A81}
+	EndGlobalSection
+EndGlobal

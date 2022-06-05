@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TSvsGTD_Avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="250"
+        x:Class="TSvsGTD_Avalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="TSvsGTD_Avalonia" Width="800" Height="250">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid Background="AliceBlue">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="40" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Label Margin="5,5,0,9" HorizontalAlignment="Left" Width="168" Content="Проверочный период:" FontWeight="Bold" FontSize="14" />
+		<Button Content="Import" HorizontalAlignment="Right" Margin="0,8,5,10" Width="75" Height="30" Command="{Binding ImportDataCommand}" />
+		<TextBlock Text="С" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,5,0,5" Width="30" FontSize="14" FontWeight="Normal" TextAlignment="Center" Grid.Row="1" Background="AliceBlue"/>
+		<DatePicker VerticalAlignment="Center" SelectedDate="{Binding BeginDate, Mode=TwoWay}"  Margin="53,0,266,0" Grid.Row="1" Background="SkyBlue"/>
+		<TextBlock Text="По"  Margin="400,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" FontSize="14" FontWeight="Normal" TextAlignment="Center" Grid.Row="1" Background="AliceBlue"/>
+		<DatePicker VerticalAlignment="Center" SelectedDate="{Binding EndDate, Mode=TwoWay}" Margin="440,0,65,0" Grid.Row="1" Background="SkyBlue"/>
+	</Grid>
+
+</Window>
